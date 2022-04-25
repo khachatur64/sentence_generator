@@ -30,13 +30,10 @@ const Array_WORD = [
     ]
 ]
 
-//print array names
 for (var i = 0; i < ARRAY_NAME.length; i++) {
     $('thead').append('<th>' + ARRAY_NAME[i] + '</th>');
 }
-//end print array names
 
-//print array words
 function ArrayFunction() {
     var html = '';
     let arrayLength  = [];
@@ -56,9 +53,7 @@ function ArrayFunction() {
     $('tbody').append(html);
 }
 ArrayFunction()
-//end print array words
 
-//added new word in array
 $(document).ready(function(){
     for (var i = 0; i < ARRAY_NAME.length; i++) {
         $('select').append('<option value="'+i+'">' + ARRAY_NAME[i] + '</option>');
@@ -77,7 +72,6 @@ function getRandomSentence (array) {
     return array[index];
 }
 
-//generated sentence
 let text = '';
 $(".generated-sentence").click(function() {
     text = '';
